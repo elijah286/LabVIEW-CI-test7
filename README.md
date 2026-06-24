@@ -1,5 +1,12 @@
 # Example LabVIEW project — Mini Systems Project
 
+<!-- labview-ci:dashboard -->
+## LabVIEW CI
+
+[![LabVIEW CI dashboard](https://img.shields.io/badge/LabVIEW%20CI-dashboard-2ea44f)](https://elijah286.github.io/LabVIEW-CI-test7/)
+
+LabVIEW CI runs on every pull request. See the [**CI dashboard**](https://elijah286.github.io/LabVIEW-CI-test7/) for build status, VI Analyzer results, VI diffs, and mass-compile reports.
+
 This is the example project the tooling runs its own CI on, so the dashboard
 showcases real Mass Compile / VI Analyzer / VIDiff / Snapshot results.
 
