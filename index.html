@@ -1051,7 +1051,7 @@
     // activities to queue. Reuses dispatchCells (oldest-first, snapshots as one
     // backfill) + the same token and optimistic-queued bridge as every other
     // dispatch on the dashboard.
-    var HIST = [{"sha": "8cdcd89b2c371232601db413fc23d4737604b8f0", "short": "8cdcd89", "msg": "added code", "snapshots2": {"windows": {"have": 0, "total": 44}, "linux": {"have": 44, "total": 44}}}];                        // [{sha, short, msg}] newest-first (project revisions)
+    var HIST = [{"sha": "693fae71041c966405a01daa27996908871a8443", "short": "693fae7", "msg": "added error handling and dependencies", "snapshots2": {"windows": {"have": 0, "total": 44}, "linux": {"have": 44, "total": 44}}}, {"sha": "8cdcd89b2c371232601db413fc23d4737604b8f0", "short": "8cdcd89", "msg": "added code", "snapshots2": {"windows": {"have": 0, "total": 44}, "linux": {"have": 44, "total": 44}}}];                        // [{sha, short, msg}] newest-first (project revisions)
     var RAN = {"masscompile": 1, "snapshots": 1, "snapshots2": 1};                     // {cap:1} caps with a result/active run somewhere in history
     var CAP_META = {                            // label + sub for each known capability
       'snapshots':   ['VI Snapshots', 'Renders every changed VI (classic HTML snapshots)'],
@@ -1453,7 +1453,7 @@
   </script>
   <main class="lvci-main">
   <h1>CI Dashboard — LabVIEW-CI-test7</h1>
-  <div class="sub">Last updated: 2026-07-04 15:27 UTC &nbsp;|&nbsp; Auto-refreshes every 15 min</div>
+  <div class="sub">Last updated: 2026-07-04 16:25 UTC &nbsp;|&nbsp; Auto-refreshes every 15 min</div>
   <div class="nav">
     <a href="https://github.com/elijah286/LabVIEW-CI-test7">GitHub</a>
     <a href="https://github.com/elijah286/LabVIEW-CI-test7/actions">Actions</a>
@@ -1533,22 +1533,22 @@
       <td style="text-align:center;color:var(--fg-muted);font-size:.75em">—</td>
     </tr>
 
-    <tr data-project="false" data-deponly="false">
+    <tr data-project="true" data-deponly="false">
       <td class="cidash-rev">
         <div class="cidash-rev-wrap">
           <span class="cidash-avatar" style="background:hsl(66,42%,45%)" title="Elijah Kerry" aria-hidden="true">E</span>
           <div class="cidash-rev-body">
-            <div class="cidash-rev-line1"><a href="https://elijah286.github.io/LabVIEW-CI-test7/vi-snapshots/index.html?sha=693fae71041c966405a01daa27996908871a8443" class="cidash-rev-msg" title="added error handling and dependencies">added error handling and dependencies</a></div>
+            <div class="cidash-rev-line1"><a href="https://elijah286.github.io/LabVIEW-CI-test7/vi-snapshots/index.html?sha=693fae71041c966405a01daa27996908871a8443" class="cidash-rev-msg" title="added error handling and dependencies">added error handling and dependencies</a><a href="https://elijah286.github.io/LabVIEW-CI-test7/vi-snapshots/index.html?sha=693fae71041c966405a01daa27996908871a8443" class="snap-glyph" title="Snapshots exist for this revision (44 of 45 VIs)" aria-label="Snapshots exist for this revision (44 of 45 VIs)"><svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true" style="vertical-align:text-bottom;flex:0 0 auto"><path d="M1.75 2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h.94l8.5-8.5a.25.25 0 0 1 .354 0l1.756 1.757V2.75a.25.25 0 0 0-.25-.25H1.75ZM14.5 9.232 11.06 5.79 3.852 13h9.898a.25.25 0 0 0 .25-.25V9.232ZM1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25V2.75C0 1.784.784 1 1.75 1ZM5.5 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></a></div>
             <div class="cidash-rev-meta"><a href="https://elijah286.github.io/LabVIEW-CI-test7/vi-snapshots/index.html?sha=693fae71041c966405a01daa27996908871a8443" class="cidash-rev-sha" title="Browse this revision's VIs in the VI Browser">693fae7</a><span class="cidash-rev-dot">&middot;</span>Elijah Kerry<span class="cidash-rev-dot">&middot;</span>2026-06-24</div>
           </div>
         </div>
       </td>
-      <td style="text-align:center;color:var(--fg-muted);font-size:.75em">—</td>
-      <td style="text-align:center;color:var(--fg-muted);font-size:.75em">—</td>
-      <td style="text-align:center;color:var(--fg-muted);font-size:.75em">—</td>
-      <td style="text-align:center;color:var(--fg-muted);font-size:.75em">—</td>
-      <td style="text-align:center;color:var(--fg-muted);font-size:.75em">—</td>
-      <td style="text-align:center;color:var(--fg-muted);font-size:.75em">—</td>
+      <td style="text-align:center"><a href="#" class="cidash-run" data-cap="masscompile" data-sha="693fae71041c966405a01daa27996908871a8443" data-parent="8cdcd89b2c371232601db413fc23d4737604b8f0" data-short="693fae7" title="Run Mass Compile for commit 693fae7">&#9655;</a></td>
+      <td style="text-align:center"><a href="#" class="cidash-run" data-cap="vi-analyzer" data-sha="693fae71041c966405a01daa27996908871a8443" data-parent="8cdcd89b2c371232601db413fc23d4737604b8f0" data-short="693fae7" title="Run VI Analyzer for commit 693fae7">&#9655;</a></td>
+      <td style="text-align:center"><a href="#" class="cidash-run" data-cap="vidiff" data-sha="693fae71041c966405a01daa27996908871a8443" data-parent="8cdcd89b2c371232601db413fc23d4737604b8f0" data-short="693fae7" title="Run VIDiff for commit 693fae7">&#9655;</a></td>
+      <td style="text-align:center" class="cidash-cap-cell" data-cap="snapshots" data-sha="693fae71041c966405a01daa27996908871a8443" data-parent="8cdcd89b2c371232601db413fc23d4737604b8f0" data-short="693fae7" data-ts="" data-done="false"><span class="cidash-chip cc-warn" title="44 of 45 VIs have snapshots; 1 missing - run this revision or use Populate history to backfill"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6.46 1.05c.66-1.23 2.43-1.23 3.08 0l6.08 11.38A1.75 1.75 0 0 1 14.08 15H1.92a1.75 1.75 0 0 1-1.54-2.57ZM8.75 5.75a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg><a href="https://elijah286.github.io/LabVIEW-CI-test7/vi-snapshots/index.html?sha=693fae71041c966405a01daa27996908871a8443" style="color:inherit">44/45</a></span></td>
+      <td style="text-align:center"><a href="#" class="cidash-run" data-cap="unit-tests" data-sha="693fae71041c966405a01daa27996908871a8443" data-parent="8cdcd89b2c371232601db413fc23d4737604b8f0" data-short="693fae7" title="Run Unit Tests for commit 693fae7">&#9655;</a></td>
+      <td style="text-align:center"><a href="#" class="cidash-run" data-cap="antidoc" data-sha="693fae71041c966405a01daa27996908871a8443" data-parent="8cdcd89b2c371232601db413fc23d4737604b8f0" data-short="693fae7" title="Run Antidoc for commit 693fae7">&#9655;</a></td>
     </tr>
 
     <tr data-project="false" data-deponly="false">
